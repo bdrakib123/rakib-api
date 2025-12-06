@@ -17,10 +17,6 @@ function sendImage(res, fileName) {
   res.send(img);
 }
 
-// kiss image API
-app.post("/api/kiss", (req, res) => {
-  sendImage(res, "kiss.png");
-});
 
 // pair image API
 app.post("/api/pair", (req, res) => {
