@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 function sendImage(res, fileName) {
-  const imgPath = path.join(__dirname, fileName);
+  const imgPath = path.join(__dirname, "image", fileName);
 
   if (!fs.existsSync(imgPath)) {
     return res.status(404).json({ error: `${fileName} not found on server` });
@@ -17,6 +17,10 @@ function sendImage(res, fileName) {
   res.send(img);
 }
 
+// টেস্ট করার জন্য
+app.get("/api", (req, res) => {
+  res.json({ message: "Rakib API is working ✅" });
+});
 
 // pair image API
 app.post("/api/pair", (req, res) => {
