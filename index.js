@@ -25,8 +25,8 @@ const TEMPLATE_CONFIG = {
   pair: {
     bg: "pair.png",
     avatars: [
-      { x: 200, y: 200, size: 400 },  // DP-1
-      { x: 800, y: 200, size: 400 }   // DP-2
+      { x: 980, y: 200, size: 200 },  // DP-1
+      { x: 140, y: 200, size: 200 }   // DP-2
     ]
   },
 
