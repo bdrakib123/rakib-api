@@ -18,7 +18,7 @@ async function getAvatar(uid) {
   return await Jimp.read(res.data);
 }
 
-//সাইজ এড
+//সাইজ এড 2 ডিপি..... 
 
 
 const TEMPLATE_CONFIG = {
@@ -29,6 +29,8 @@ const TEMPLATE_CONFIG = {
       { x: 800, y: 200, size: 400 }   // DP-2
     ]
   },
+
+  //সাইজ এড ১ডিপি.....
 
   crush: {
     bg: "crush.png",
